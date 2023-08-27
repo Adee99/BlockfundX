@@ -1,12 +1,12 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
-    version: "0.8.17",
+    version: "0.8.9",
     defaulNetwork: 'sepolia',
     networks:{
       hardhat: {},
       sepolia: {
-        url: 'https://rpc.ankr.com/eth_sepolia',
+        url: 'https://sepolia.rpc.thirdweb.com/15065ae3c21e0bff07eaf80b713a6ef0',
         accounts: [`0x${process.env.PRIVATE_KEY}`]
       }
     },

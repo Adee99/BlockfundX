@@ -25,13 +25,13 @@ contract Crowdfunding {
         require(campaign.deadline < block.timestamp, "Deadline should be a date in future");
 
         campaign.owner = _owner;
-        campaign.deadline = _deadline;
-        campaign.image = _image;
+        campaign.title = _title;
+        campaign.description = _description;
         campaign.target = _target;
         campaign.deadline = _deadline;
+        campaign.image = _image;
+        
         campaign.collectedAmount = 0;
-        campaign.title = _title;
-
         numberOfCampaigns++;
 
         return numberOfCampaigns - 1;
